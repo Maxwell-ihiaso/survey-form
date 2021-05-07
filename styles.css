@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(128,128,128, 0.1);
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+header #title {
+  font-family: 'New Tegomin', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+
+}
+
+header span {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+
+}
+
+header #description {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2.6rem;
+  font-weight: 300;
+
+}
+
+form#survey-form {
+  padding: 3rem;
+  margin: 5rem auto;
+  width: 95%;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(128,128,128, 0.6);
+  border-radius: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0.1px;
+  font-size: 1.1rem;
+}
+fieldset {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-width: .5px;
+}
+
+fieldset label {
+  font-size: 1.1rem;
+}
+
+fieldset,
+textarea {
+  border-radius: 0.8rem;
+
+}
+
+textarea {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+input[type="submit"]:hover {
+  background: #fff;
+  border: 1px solid rgba(128, 128, 128, 1);
+  color: rgba(128,128,128, 1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 2rem
+  }
+
+  header #title {
+    font-size: 4rem;
+  }
+
+  header span {
+    font-size: 5rem;
+  }
+
+  header #description {
+    font-size: 3rem;
+  }
+
+  form#survey-form {
+    width: 90%;
+  }
+
+  input,
+  select {
+    font-size: 1.5rem;
+  }
+
+  fieldset label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  form#survey-form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  form#survey-form {
+    padding: 4rem;
+    width: 60%;
+  }
+}

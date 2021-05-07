@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport:" content="width=device-width, intial-scale=1">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=New+Tegomin&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+  <body>
+    <header>
+      <h1 id="title">Survey <span>Form</span></h1>
+      <p id="description">This survey is to understand latest trends in technology.</p>
+    </header>
+
+    <main>
+      <form id="survey-form" action="/" method="post">
+        <label id="name-label" for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter full name" required>
+        <label id="email-label" for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label id="number-label" for="number">Choose a number: </label>
+        <input type="number" min="0" max="9" name="number" id="number" placeholder="Enter a number">
+        <label for="dropdown">Are you a programmer ? </label>
+        <select id="dropdown" name="program">
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+
+        </select>
+        <fieldset>
+          <legend>What program do you like ? </legend>
+          <input id="react" type="radio" name="program-choice" value="react">
+          <label for="react">React</label>
+          <input id="angular" type="radio" name="program-choice" value="angular">
+          <label for="angular">Angular</label>
+          <input id="vue" type="radio" name="program-choice" value="vue">
+          <label for="vue">Vue</label>
+          <input id="typescript" type="radio" name="program-choice" value="typescript">
+          <label for="typescript">Typescript</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What have you learnt ? </legend>
+          <input id="html" type="checkbox" name="program-choice" value="html">
+          <label for="html">HTML</label>
+          <input id="css" type="checkbox" name="program-choice" value="css">
+          <label for="css">CSS</label>
+          <input id="js" type="checkbox" name="program-choice" value="javascript">
+          <label for="js">JavaScript</label>
+          <input id="boostrap" type="checkbox" name="program-choice" value="bootstrap">
+          <label for="bootstrap">BootStrap</label>
+        </fieldset>
+
+        <textarea name="comment" rows="8" cols="70" placeholder="Additional comments"></textarea>
+        <input id="submit" type="submit" name="submit" value="submit">
+      </form>
+    </main>
+  </body>
+</html>
